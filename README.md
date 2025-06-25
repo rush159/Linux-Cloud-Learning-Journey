@@ -30,12 +30,12 @@ This repository documents my daily learning progress as I build my skills for Cl
 
 ---
 
-## Upcoming Topics
+# Upcoming Topics
  -Standard Input ,Outputs and Errors
  -Redirection basics and advanced
  -sort, grep, cut commands
 
-Day 2 - June 24, 2025
+## Day 2 - June 24, 2025
 
   Day 2 - June 24, 2025
     Learned about Linux input/output system:
