@@ -38,30 +38,30 @@ This repository documents my daily learning progress as I build my skills for Cl
 ## Day 2 - June 24, 2025
 
   Day 2 - June 24, 2025
-    Learned about Linux input/output system:
-        Standard Input (stdin) – user input from keyboard
-        Standard Output (stdout) – regular command output
-        Standard Error (stderr) – error messages
-        Understood how these are displayed and handled in the terminal
+   - Learned about Linux input/output system:
+       -    Standard Input (stdin) – user input from keyboard
+       -   Standard Output (stdout) – regular command output
+       -  Standard Error (stderr) – error messages
+       - Understood how these are displayed and handled in the terminal
 
-   Practiced file redirection:
-        > to overwrite output into a file
-        >> to append output to an existing file
-        < to use a file as input
-        Created multiple files and redirected output using these operators
-    Learned and practiced:
-        cat — creating, viewing, and combining file contents
-        cut — extracting fields using delimiters (-d, -f options)
-        sort — sorting file content alphabetically or numerically
-        Started using piping (|) to chain multiple commands together
-    Practiced with AI-assisted problem sets on redirection and piping:
-        Asked ChatGPT to generate command-line problems
-        Solved scenarios involving multiple redirections and file manipulations
-    Started exploring command-line filtering:
-        Learned basics of grep (more practice planned for Day 3)
-Upcoming Topics
-    Deep dive into grep, awk, and sed
-    Chaining commands with advanced piping
-    Creating bash scripts for automation
-    Practicing real-world mini tasks using Linux CLI
-This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
+   - Practiced file redirection:
+     -   > to overwrite output into a file
+     -  >> to append output to an existing file
+     -  < to use a file as input
+     -   Created multiple files and redirected output using these operators
+   - Learned and practiced:
+     - cat — creating, viewing, and combining file contents
+     -   cut — extracting fields using delimiters (-d, -f options)
+    - sort — sorting file content alphabetically or numerically
+    -      Started using piping (|) to chain multiple commands together
+   - Practiced with AI-assisted problem sets on redirection and piping:
+        - Asked ChatGPT to generate command-line problems
+        - Solved scenarios involving multiple redirections and file manipulations
+    - Started exploring command-line filtering:
+      - Learned basics of grep (more practice planned for Day 3)
+- Upcoming Topics
+   - Deep dive into grep, awk, and sed
+   - Chaining commands with advanced piping
+   - Creating bash scripts for automation
+   - Practicing real-world mini tasks using Linux CLI
+# This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
