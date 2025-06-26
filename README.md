@@ -64,4 +64,27 @@ This repository documents my daily learning progress as I build my skills for Cl
    - Chaining commands with advanced piping
    - Creating bash scripts for automation
    - Practicing real-world mini tasks using Linux CLI
+
+  ### ✅ Day 3 – June 25, 2025
+
+- 📄 **New Commands**
+-  tee – split output to both file and screen
+  - xargs – convert input into arguments
+
+- 📁 **Advanced ls Options**
+  - -l – long list
+  - -a – show hidden files
+  - -F – classify entries (e.g., /, *, etc.)
+  - -h – human-readable sizes
+
+- 📂 **Directory Navigation**
+  - pwd, cd, cd .., cd ~, cd /desktop`
+
+- 💡 **Aliases**
+  - Created .bash_aliases
+  - Added custom shortcuts like:
+    ```bash
+  alias docs='cd ~/Documents'
+  alias desk='cd ~/Desktop'
+    ```
 # This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
