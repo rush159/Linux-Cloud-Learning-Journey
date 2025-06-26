@@ -65,8 +65,8 @@ This repository documents my daily learning progress as I build my skills for Cl
    - Creating bash scripts for automation
    - Practicing real-world mini tasks using Linux CLI
 
-  ### ✅ Day 3 – June 25, 2025
-
+## ✅ Day 3 – June 25, 2025
+  Day 3 – June 25, 2025
 - 📄 **New Commands**
 -  tee – split output to both file and screen
   - xargs – convert input into arguments
