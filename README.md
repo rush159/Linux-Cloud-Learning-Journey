@@ -89,7 +89,9 @@ This repository documents my daily learning progress as I build my skills for Cl
     alias docs='cd ~/Documents'
     alias desk='cd ~/Desktop'
 
-##✅ Day 4 – June 26, 2025
+## ✅ Day 4 – June 26, 2025
+  Day 4 – June 26, 2025
+### ✅ Day 4 – June 26, 2025
 
 ---
 
