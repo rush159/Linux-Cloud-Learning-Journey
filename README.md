@@ -88,4 +88,62 @@ This repository documents my daily learning progress as I build my skills for Cl
     ```bash
     alias docs='cd ~/Documents'
     alias desk='cd ~/Desktop'
+
+##✅ Day 4 – June 26, 2025
+
+---
+
+# 📂 Topics Covered
+
+# 📄 File Extensions in Linux
+
+- Linux doesn't depend on file extensions like `.txt`, `.jpg`, or `.mp4`.
+- It reads the **file header (content)** to determine the file type.
+- You can rename a `.txt` to `.mp4` and Linux will still treat it as a text file if the content matches.
+
+---
+
+# 📄 Creating Files & Folders
+
+| Command | Description |
+|--------|-------------|
+| `touch file.txt` | Create a single file |
+| `touch file1 file2 file3` | Create multiple files |
+| `mkdir foldername` | Create one folder |
+| `mkdir a b c` | Create multiple folders |
+| `mkdir -p a/b/c` | Create nested folders recursively |
+
+---
+
+# 🧹 Deleting Files & Folders
+
+| Command | Action |
+|--------|--------|
+| `rm file.txt` | Delete a file |
+| `rm -r folder/` | Delete folder and all contents |
+| `rmdir folder/` | Delete only empty folder |
+
+> ⚠️ Warning: `rm -r` is powerful — use it carefully.
+
+---
+
+# 🌟 Wildcards
+
+| Wildcard | Meaning | Example |
+|---------|---------|---------|
+| `*` | Matches any characters | `ls *.txt` → all `.txt` files |
+| `?` | Matches one character | `ls f?.txt` → `f1.txt`, `fa.txt` |
+| `[]` | Matches a range or list | `ls file[1-3].txt` → `file1.txt`, `file2.txt`, `file3.txt` |
+
+---
+
+# 🔧 Brace Expansion
+
+| Command | Result |
+|---------|--------|
+| `touch file{1,2,3}.txt` | file1.txt file2.txt file3.txt |
+| `mkdir week{1..3}` | week1 week2 week3 |
+| `mkdir project{A,B}/day{1,2}` | projectA/day1 projectA/day2 projectB/day1 projectB/day2 |
+
+---
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
