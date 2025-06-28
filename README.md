@@ -146,9 +146,9 @@ This repository documents my daily learning progress as I build my skills for Cl
 | `touch file{1,2,3}.txt` | file1.txt file2.txt file3.txt |
 | `mkdir week{1..3}` | week1 week2 week3 |
 | `mkdir project{A,B}/day{1,2}` | projectA/day1 projectA/day2 projectB/day1 projectB/day2 |
-## ✅ Day 4 – June 28, 2025
-  Day 4 – June 28, 2025
-### ✅ Day 4 – June 28, 2025
+## ✅ Day 5 – June 28, 2025
+  Day 5 – June 28, 2025
+### ✅ Day 5 – June 28, 2025
 
 ## 📄 Copying Files & Folders (cp command)
 
