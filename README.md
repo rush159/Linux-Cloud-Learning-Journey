@@ -146,6 +146,49 @@ This repository documents my daily learning progress as I build my skills for Cl
 | `touch file{1,2,3}.txt` | file1.txt file2.txt file3.txt |
 | `mkdir week{1..3}` | week1 week2 week3 |
 | `mkdir project{A,B}/day{1,2}` | projectA/day1 projectA/day2 projectB/day1 projectB/day2 |
+## ✅ Day 4 – June 28, 2025
+  Day 4 – June 28, 2025
+### ✅ Day 4 – June 28, 2025
+
+## 📄 Copying Files & Folders (cp command)
+
+- cp source.txt destination.txt → Copies a file
+- cp file1 file2 dir/ → Copies files into directory
+- cp -r folder1/ folder2/ → Copies entire folder recursively
+- cp -i → Interactive mode (asks before overwriting)
+- cp -u → Copies only if source is newer than destination
+
+✅ Used for transferring files/folders anywhere we want.
 
 ---
+
+## 📁 Moving / Renaming Files & Folders (mv command)
+
+- mv file1.txt dir/ → Moves file to directory
+- mv oldname.txt newname.txt → Renames a file
+- mv file1.txt file2.txt folder/ → Moves both into folder/
+
+⚠️ Automatically overwrites unless used with -i (interactive)
+
+---
+
+## ✍️ Editing Files with nano
+
+- nano filename.txt → Opens file in nano text editor
+- Inside nano:
+  - Ctrl + O → Save (Write Out)
+  - Ctrl + X → Exit
+  - Ctrl + K → Cut line
+  - Ctrl + U → Paste line
+  - Ctrl + W → Find
+  - Ctrl + \ → Find and Replace
+
+---
+
+## 🔍 Spell Checker in nano
+
+- aspell needs to be installed
+- Edit nano config file:
+  ```bash
+  nano /etc/nanorc
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
