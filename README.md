@@ -191,4 +191,91 @@ This repository documents my daily learning progress as I build my skills for Cl
 - Edit nano config file:
   ```bash
   nano /etc/nanorc
+  # 📅 Day 6 – Locate, Sudo, and Basic Find Command
+
+---
+
+## 📍 locate / plocate
+
+- `locate filename` → Finds path using a prebuilt database
+- `sudo updatedb` → Updates the plocate database
+- `plocate` is the modern replacement for `mlocate` (used in newer Ubuntu)
+- Database location: `/var/lib/plocate/plocate.db`
+
+### 🔍 Database Info (approximation)
+- `ls -lh /var/lib/plocate/plocate.db` → Shows database size
+- `strings /var/lib/plocate/plocate.db | grep '^/' | wc -l` → Path entries in DB
+- `strings /var/lib/plocate/plocate.db | grep '^/' | awk '{ sum += length } END { print sum }'` → Approx bytes in filenames
+
+---
+
+## 🔐 sudo
+
+- `sudo` runs commands with elevated (root) privileges
+- Needed for updating DB, installing software, editing system files
+
+---
+
+## 🔎 find
+
+- `find /path -name "file.txt"` → Case-sensitive match
+- `find /path -iname "file.txt"` → Case-insensitive
+- `find /path -type f` → Find files only
+- `find /path -type d` → Find directories only
+- `find /path -maxdepth 2` → Limits how deep to search
+- `find /path -mindepth 2` → Skips top-level results
+
+---
+
+✅ Summary:
+- Learned to use `locate` with `plocate`
+- Explored how to check and understand the database
+- Practiced using `find` with filters and depth control
+- Understood how `sudo` is needed for system-level changes
+
+## ✅ Day 6 – June 29, 2025
+  Day 6 – June 29, 2025
+### ✅ Day 6 – June 29, 2025
+– Locate, Sudo, and Basic Find Command
+
+---
+
+# 📍 locate / plocate
+
+- `locate filename` → Finds path using a prebuilt database
+- `sudo updatedb` → Updates the plocate database
+- `plocate` is the modern replacement for `mlocate` (used in newer Ubuntu)
+- Database location: `/var/lib/plocate/plocate.db`
+
+# 🔍 Database Info (approximation)
+- `ls -lh /var/lib/plocate/plocate.db` → Shows database size
+- `strings /var/lib/plocate/plocate.db | grep '^/' | wc -l` → Path entries in DB
+- `strings /var/lib/plocate/plocate.db | grep '^/' | awk '{ sum += length } END { print sum }'` → Approx bytes in filenames
+
+---
+
+# 🔐 sudo
+
+- `sudo` runs commands with elevated (root) privileges
+- Needed for updating DB, installing software, editing system files
+
+---
+
+# 🔎 find
+
+- `find /path -name "file.txt"` → Case-sensitive match
+- `find /path -iname "file.txt"` → Case-insensitive
+- `find /path -type f` → Find files only
+- `find /path -type d` → Find directories only
+- `find /path -maxdepth 2` → Limits how deep to search
+- `find /path -mindepth 2` → Skips top-level results
+
+---
+
+✅ Summary:
+- Learned to use `locate` with `plocate`
+- Explored how to check and understand the database
+- Practiced using `find` with filters and depth control
+- Understood how `sudo` is needed for system-level changes
+
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
