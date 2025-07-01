@@ -277,5 +277,74 @@ This repository documents my daily learning progress as I build my skills for Cl
 - Explored how to check and understand the database
 - Practiced using `find` with filters and depth control
 - Understood how `sudo` is needed for system-level changes
+- 
+- ## ✅ Day 7 – June 30, 2025
+  Day 7 – June 30, 2025
+### ✅ Day 7 – June 30, 2025
+
+## ✅ Day 8 – July 01, 2025
+### ✅ Day 8 – July 01, 2025
+
+---
+
+# 🔍 Advanced Find Commands
+
+## 📊 wc (Word Count) Command
+- `wc filename` → Shows lines, words, and characters count
+- `wc -l` → Count lines only
+- `wc -w` → Count words only
+- `wc -c` → Count characters only
+
+---
+
+## 🔎 Finding Files by Size
+- `find /path -size +100k` → Files larger than 100KB
+- `find /path -size -5M` → Files smaller than 5MB
+- `find /path -size +100k -size -5M` → Files between 100KB and 5MB
+
+### Size Units:
+- `c` → bytes
+- `k` → kilobytes
+- `M` → megabytes
+- `G` → gigabytes
+
+---
+
+## 🔗 Boolean Operations with Find
+- `find /path -name "*.txt" -o -name "*.pdf"` → Files ending with .txt OR .pdf
+- `find /path -type f -a -size +1M` → Files that are regular files AND larger than 1MB
+- `find /path ! -name "*.log"` → All files NOT ending with .log
+
+### Boolean Operators:
+- `-a` or `-and` → AND operation (default)
+- `-o` or `-or` → OR operation
+- `!` or `-not` → NOT operation
+
+---
+
+## ⚡ exec Command
+- `find /path -name "*.txt" -exec cat {} \;` → Execute cat on each found file
+- `find /path -type f -exec ls -l {} \;` → List details of each found file
+- `find /path -name "*.log" -exec rm {} \;` → Delete all .log files
+
+### exec Syntax:
+- `{}` → Placeholder for the found file/directory
+- `\;` → Required to terminate the exec command
+
+---
+
+## ⌨️ Terminal Control
+- `Ctrl + C` → Cancel/interrupt current running command
+- Useful when commands take too long or get stuck
+
+---
+
+✅ Summary:
+- Learned `wc` command for counting lines, words, and characters
+- Practiced finding files by size with various units
+- Explored boolean operations (`-a`, `-o`, `!`) for complex searches
+- Used `exec` command to perform actions on found files
+- Understood the importance of `\;` terminator with exec
+- Learned `Ctrl + C` for canceling stuck commands
 
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
