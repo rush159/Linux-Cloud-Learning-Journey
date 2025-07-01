@@ -277,13 +277,10 @@ This repository documents my daily learning progress as I build my skills for Cl
 - Explored how to check and understand the database
 - Practiced using `find` with filters and depth control
 - Understood how `sudo` is needed for system-level changes
-- 
-- ## ✅ Day 7 – June 30, 2025
+  
+## ✅ Day 7 – June 30, 2025
   Day 7 – June 30, 2025
 ### ✅ Day 7 – June 30, 2025
-
-## ✅ Day 8 – July 01, 2025
-### ✅ Day 8 – July 01, 2025
 
 ---
 
