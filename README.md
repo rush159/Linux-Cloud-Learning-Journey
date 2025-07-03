@@ -344,4 +344,83 @@ This repository documents my daily learning progress as I build my skills for Cl
 - Understood the importance of `\;` terminator with exec
 - Learned `Ctrl + C` for canceling stuck commands
 
+## ✅ Day 8 – July 2, 2025
+  Day 8 – July 2, 2025
+### ✅ Day 8 – June 2, 2025
+---
+
+# 📄 File Content Commands
+
+## 🐱 cat (Concatenate) Command
+- `cat filename` → Display file contents
+- `cat file1 file2` → Concatenate and display multiple files
+- `cat file1 file2 > combined.txt` → Combine files into new file
+- `cat >> file.txt` → Append text to file (Ctrl+D to finish)
+
+### What is Concatenate?
+- Combines multiple files or text streams into one continuous output
+- Useful for merging configuration files, logs, or text documents
+
+---
+
+## 🔄 tac Command (Reverse of cat)
+- `tac filename` → Display file contents in reverse line order
+- `tac file1 file2` → Concatenate files but reverse the line order
+- Shows last line first, first line last
+
+---
+
+## 📊 head Command (Top Lines)
+- `head filename` → Shows first 10 lines by default
+- `head -n 5 filename` → Shows first 5 lines
+- `head -15 filename` → Shows first 15 lines
+- `head file1 file2` → Shows first 10 lines of each file
+
+---
+
+## 📉 tail Command (Bottom Lines)
+- `tail filename` → Shows last 10 lines by default
+- `tail -n 5 filename` → Shows last 5 lines
+- `tail -15 filename` → Shows last 15 lines
+- `tail -f filename` → Follow file changes in real-time
+
+---
+
+## 📖 less Command (Pager)
+- `less filename` → View file content page by page
+- Navigation in less:
+  - `Space` → Next page
+  - `b` → Previous page
+  - `q` → Quit
+  - `/search` → Search forward
+  - `?search` → Search backward
+  - `G` → Go to end of file
+  - `g` → Go to beginning of file
+
+---
+
+## 🔧 Combining Commands with Pipes
+- `cat file.txt | head -20` → Show first 20 lines of file
+- `cat file.txt | tail -15` → Show last 15 lines of file
+- `head -50 file.txt | tail -10` → Show lines 41-50
+- `cat file1 file2 | sort > sorted.txt` → Combine and sort files
+
+---
+
+## 📁 Output Redirection Practice
+- `head -20 file.txt > top20.txt` → Save first 20 lines to new file
+- `tail -10 file.txt >> bottom.txt` → Append last 10 lines to file
+- `cat *.txt | less` → View all .txt files combined in less
+
+---
+
+✅ Summary:
+- Learned `cat` for concatenating and displaying files
+- Explored `tac` as the reverse of cat (reverse line order)
+- Practiced `head` for viewing top lines with `-n` option
+- Used `tail` for viewing bottom lines and real-time monitoring
+- Mastered `less` for paginated file viewing with navigation
+- Combined all commands with pipes and redirection
+- Reviewed and practiced previously learned commands
+
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
