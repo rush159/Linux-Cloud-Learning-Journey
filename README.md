@@ -422,5 +422,76 @@ This repository documents my daily learning progress as I build my skills for Cl
 - Mastered `less` for paginated file viewing with navigation
 - Combined all commands with pipes and redirection
 - Reviewed and practiced previously learned commands
+  ## ✅ Day 9 – July 03, 2025
+### ✅ Day 9 – July 03, 2025
+
+---
+
+# 🛠️ System Troubleshooting & Configuration
+
+## 🐛 Issues Faced
+- **Drag-and-drop** from Windows 11 to Ubuntu VM not working
+- **Slow internet speeds** (~100 KBps despite 300 Mbps host connection)
+
+## ✅ Solutions Applied
+
+### 📦 VirtualBox Guest Additions
+- Installed **VirtualBox Guest Additions** correctly
+- Enables seamless integration between host and guest OS
+- Required for proper drag-and-drop functionality
+
+### 🖥️ Display Server Switch
+- Switched from **Wayland** to **X11 session** in Ubuntu
+- X11 provides better compatibility with VirtualBox features
+- Changed at login screen for better VM performance
+
+### 🌐 Network Configuration
+- Changed VirtualBox **Network Adapter** settings:
+  - Switched from `NAT` to `Bridged Adapter`
+  - Used `Intel PRO/1000 MT Desktop` for best performance
+  - Bridged adapter gives VM direct network access like physical machine
+
+### 📁 File Transfer Setup
+- Set up **Shared Folders** for stable file transfer
+- More reliable than drag-and-drop for large files
+- Provides persistent file sharing between host and guest
+
+---
+
+# 📄 sort Command Deep Dive
+
+## 🔧 Sort Options Explored
+
+| Option | Meaning | Example |
+|--------|---------|---------|
+| `-n` | Sort numerically | `sort -n numbers.txt` |
+| `-r` | Reverse the result | `sort -r file.txt` |
+| `-k` | Sort by a specific column | `sort -k 2 data.csv` |
+| `-u` | Show unique lines only | `sort -u duplicates.txt` |
+| `-M` | Sort by month names | `sort -M months.txt` |
+| `-h` | Human-readable sizes (e.g., 1K, 5M) | `sort -h sizes.txt` |
+
+## 🎯 Practical Examples
+- `sort -nr file.txt` → Sort numerically in reverse order
+- `sort -k 3 -n data.txt` → Sort by 3rd column numerically
+- `sort -u -k 1,1 file.txt` → Unique values based on first column only
+- `ls -lh | sort -k 5 -h` → Sort files by size (human-readable)
+
+---
+
+## 🔗 Combining Sort with Other Commands
+- `cat file.txt | sort -u > unique.txt` → Remove duplicates and save
+- `sort -n numbers.txt | head -5` → Show 5 smallest numbers
+- `sort -nr scores.txt | tail -3` → Show 3 lowest scores
+
+---
+
+✅ Summary:
+- Solved VirtualBox VM performance and connectivity issues
+- Learned proper Guest Additions installation
+- Configured optimal network settings for VM
+- Mastered advanced `sort` command options
+- Practiced combining sort with pipes and redirection
+- Improved overall VM experience for better Linux learning
 
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
