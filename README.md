@@ -494,4 +494,128 @@ This repository documents my daily learning progress as I build my skills for Cl
 - Practiced combining sort with pipes and redirection
 - Improved overall VM experience for better Linux learning
 
+✅ Day 10 – July 05, 2025
+✅ Day 10 – July 05, 2025
+🔍 GREP – Pattern Searching in Files
+📄 Command Overview
+
+    grep is used to search for patterns in files
+
+    Can be used with other commands via piping (|)
+
+🛠️ Options Explored
+
+    -i → case-insensitive search
+
+    -c → count number of matching lines
+
+    -v → show lines that do not match the pattern
+
+🧪 Practical Examples
+
+    ls -l | grep "Jan" → shows lines with 'Jan'
+
+    ls -l | grep -v "txt" → excludes lines with 'txt'
+
+    ls -l | grep -i "PDF" → case-insensitive match for 'pdf'
+
+    ls -l | grep -c "log" → count lines containing 'log'
+
+🔗 Integration with Other Commands
+
+    ls -l | grep -i "point" → filters results for "point"
+
+    Commonly used with ls, man, and piping
+
+📦 Tarball Creation & Extraction
+📦 What is a Tarball?
+
+    A tarball is like a bag that contains multiple files and directories
+
+    Used for archiving files into a single .tar file
+
+🛠️ Creating a Tar Archive
+
+tar -cvf archive.tar file1 file2
+
+    -c → create archive
+
+    -v → verbose output
+
+    -f → specify file name
+
+📄 Listing Contents of a Tar Archive
+
+tar -tf archive.tar
+
+    -t → test/list files in the archive
+
+📤 Extracting a Tar Archive
+
+tar -xvf archive.tar
+
+    -x → extract files from the archive
+
+🗜️ Compression with gzip & bzip2
+🛠️ Compress While Creating Archive
+
+    Gzip compression:
+
+tar -cvfz archive.tar.gz file1 file2
+
+    -z → compress using gzip
+
+Bzip2 compression:
+
+    tar -cvfj archive.tar.bz2 file1 file2
+
+        -j → compress using bzip2
+
+📤 Extracting Compressed Archives
+
+    Gzip:
+
+tar -xvfz archive.tar.gz
+
+Bzip2:
+
+    tar -xvfj archive.tar.bz2
+
+🔬 gzip vs bzip2 – Comparison
+Tool	Speed	Compression
+gzip	Faster	Less efficient
+bzip2	Slower	More efficient
+🧱 gzip & bzip2 (Standalone Use)
+🛠️ Compressing Files
+
+gzip filename
+bzip2 filename
+
+📤 Decompressing Files
+
+gunzip filename.gz
+bunzip2 filename.bz2
+
+📁 Working with .zip Files
+🛠️ Creating Zip Archives
+
+zip ourthing.zip file1.txt file2.txt
+
+📤 Unzipping
+
+unzip ourthing.zip
+
+    Useful for compatibility with Windows and cross-platform systems
+
+✅ Summary:
+
+    Learned and practiced grep with practical filters and piping
+
+    Understood tar, gzip, bzip2, and zip usage
+
+    Practiced archiving and compression via CLI
+
+    Mastered differences between compression methods
+
+    Improved Linux file handling and system efficiency
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
