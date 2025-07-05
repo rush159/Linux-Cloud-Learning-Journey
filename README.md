@@ -494,128 +494,138 @@ This repository documents my daily learning progress as I build my skills for Cl
 - Practiced combining sort with pipes and redirection
 - Improved overall VM experience for better Linux learning
 
+## ✅ Day 10 – July 05, 2025
 ### ✅ Day 10 – July 05, 2025
-##✅ Day 10 – July 05, 2025
-#🔍 GREP – Pattern Searching in Files
-   -📄 Command Overview
 
-  -grep is used to search for patterns in files
+---
 
-  - Can be used with other commands via piping (|)
+# 🔍 GREP – Pattern Searching in Files
 
-🛠️ Options Explored
+## 📄 Command Overview
+- `grep` is used to search for patterns in files
+- Can be used with other commands via piping (`|`)
 
-    -i → case-insensitive search
+## 🛠️ Options Explored
 
-    -c → count number of matching lines
+| Option | Description |
+|--------|-------------|
+| `-i` | Case-insensitive search |
+| `-c` | Count number of matching lines |
+| `-v` | Show lines that do NOT match the pattern |
 
-    -v → show lines that do not match the pattern
+## 🧪 Practical Examples
+- `ls -l | grep "Jan"` → Shows lines with 'Jan'
+- `ls -l | grep -v "txt"` → Excludes lines with 'txt'
+- `ls -l | grep -i "PDF"` → Case-insensitive match for 'pdf'
+- `ls -l | grep -c "log"` → Count lines containing 'log'
 
-🧪 Practical Examples
+## 🔗 Integration with Other Commands
+- `ls -l | grep -i "point"` → Filters results for "point"
+- Commonly used with `ls`, `man`, and piping
 
-    ls -l | grep "Jan" → shows lines with 'Jan'
+---
 
-    ls -l | grep -v "txt" → excludes lines with 'txt'
+# 📦 Tarball Creation & Extraction
 
-    ls -l | grep -i "PDF" → case-insensitive match for 'pdf'
+## 📦 What is a Tarball?
+- A tarball is like a bag that contains multiple files and directories
+- Used for archiving files into a single `.tar` file
 
-    ls -l | grep -c "log" → count lines containing 'log'
-
-🔗 Integration with Other Commands
-
-    ls -l | grep -i "point" → filters results for "point"
-
-    Commonly used with ls, man, and piping
-
-📦 Tarball Creation & Extraction
-📦 What is a Tarball?
-
-    A tarball is like a bag that contains multiple files and directories
-
-    Used for archiving files into a single .tar file
-
-🛠️ Creating a Tar Archive
-
+## 🛠️ Creating a Tar Archive
+```bash
 tar -cvf archive.tar file1 file2
+```
+- `-c` → Create archive
+- `-v` → Verbose output
+- `-f` → Specify file name
 
-    -c → create archive
-
-    -v → verbose output
-
-    -f → specify file name
-
-📄 Listing Contents of a Tar Archive
-
+## 📄 Listing Contents of a Tar Archive
+```bash
 tar -tf archive.tar
+```
+- `-t` → Test/list files in the archive
 
-    -t → test/list files in the archive
-
-📤 Extracting a Tar Archive
-
+## 📤 Extracting a Tar Archive
+```bash
 tar -xvf archive.tar
+```
+- `-x` → Extract files from the archive
 
-    -x → extract files from the archive
+---
 
-🗜️ Compression with gzip & bzip2
-🛠️ Compress While Creating Archive
+# 🗜️ Compression with gzip & bzip2
 
-    Gzip compression:
+## 🛠️ Compress While Creating Archive
 
+### Gzip compression:
+```bash
 tar -cvfz archive.tar.gz file1 file2
+```
+- `-z` → Compress using gzip
 
-    -z → compress using gzip
+### Bzip2 compression:
+```bash
+tar -cvfj archive.tar.bz2 file1 file2
+```
+- `-j` → Compress using bzip2
 
-Bzip2 compression:
+## 📤 Extracting Compressed Archives
 
-    tar -cvfj archive.tar.bz2 file1 file2
-
-        -j → compress using bzip2
-
-📤 Extracting Compressed Archives
-
-    Gzip:
-
+### Gzip:
+```bash
 tar -xvfz archive.tar.gz
+```
 
-Bzip2:
+### Bzip2:
+```bash
+tar -xvfj archive.tar.bz2
+```
 
-    tar -xvfj archive.tar.bz2
+## 🔬 gzip vs bzip2 – Comparison
 
-🔬 gzip vs bzip2 – Comparison
-Tool	Speed	Compression
-gzip	Faster	Less efficient
-bzip2	Slower	More efficient
-🧱 gzip & bzip2 (Standalone Use)
-🛠️ Compressing Files
+| Tool | Speed | Compression |
+|------|-------|-------------|
+| gzip | Faster | Less efficient |
+| bzip2 | Slower | More efficient |
 
+---
+
+# 🧱 gzip & bzip2 (Standalone Use)
+
+## 🛠️ Compressing Files
+```bash
 gzip filename
 bzip2 filename
+```
 
-📤 Decompressing Files
-
+## 📤 Decompressing Files
+```bash
 gunzip filename.gz
 bunzip2 filename.bz2
+```
 
-📁 Working with .zip Files
-🛠️ Creating Zip Archives
+---
 
+# 📁 Working with .zip Files
+
+## 🛠️ Creating Zip Archives
+```bash
 zip ourthing.zip file1.txt file2.txt
+```
 
-📤 Unzipping
-
+## 📤 Unzipping
+```bash
 unzip ourthing.zip
+```
+- Useful for compatibility with Windows and cross-platform systems
 
-    Useful for compatibility with Windows and cross-platform systems
+---
 
 ✅ Summary:
-
-    Learned and practiced grep with practical filters and piping
-
-    Understood tar, gzip, bzip2, and zip usage
-
-    Practiced archiving and compression via CLI
-
-    Mastered differences between compression methods
+- Learned and practiced `grep` with practical filters and piping
+- Understood `tar`, `gzip`, `bzip2`, and `zip` usage
+- Practiced archiving and compression via CLI
+- Mastered differences between compression methods
 
     Improved Linux file handling and system efficiency
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
