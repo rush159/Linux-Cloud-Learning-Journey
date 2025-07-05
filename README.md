@@ -494,14 +494,14 @@ This repository documents my daily learning progress as I build my skills for Cl
 - Practiced combining sort with pipes and redirection
 - Improved overall VM experience for better Linux learning
 
-✅ Day 10 – July 05, 2025
-✅ Day 10 – July 05, 2025
-🔍 GREP – Pattern Searching in Files
-📄 Command Overview
+### ✅ Day 10 – July 05, 2025
+##✅ Day 10 – July 05, 2025
+#🔍 GREP – Pattern Searching in Files
+   -📄 Command Overview
 
-    grep is used to search for patterns in files
+  -grep is used to search for patterns in files
 
-    Can be used with other commands via piping (|)
+  - Can be used with other commands via piping (|)
 
 🛠️ Options Explored
 
