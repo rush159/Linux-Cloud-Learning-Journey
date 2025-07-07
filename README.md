@@ -626,6 +626,122 @@ unzip ourthing.zip
 - Understood `tar`, `gzip`, `bzip2`, and `zip` usage
 - Practiced archiving and compression via CLI
 - Mastered differences between compression methods
+- Improved Linux file handling and system efficiency
 
-    Improved Linux file handling and system efficiency
+## ✅ Day 11 – July 06, 2025
+### ✅ Day 11 – July 06, 2025
+
+---
+
+# 🛠️ Bash Scripting Basics
+
+## 📄 What are Bash Scripts?
+- Files with `.sh` extension used to automate tasks
+- Can execute multiple commands in sequence
+- More powerful than aliases for complex operations
+
+## 🧪 Scripts Created Today
+
+### 📁 Folder Creation Script
+- Created script to generate folders 1 to 100 on desktop
+- Automated repetitive folder creation tasks
+
+### 💾 Backup Script
+- Automated backup of Desktop, Downloads, and Pictures folders
+- Transfers files to another designated backup location
+- Runs using `bash scriptname.sh` command
+
+---
+
+# 🔧 Making Scripts Executable & Global
+
+## 📂 Setting Up Personal bin Directory
+```bash
+# Create bin folder in home directory
+mkdir ~/bin
+
+# Move bash scripts to bin folder
+mv script.sh ~/bin/
+```
+
+## 🏷️ Removing .sh Extension
+```bash
+# Rename scripts to remove .sh extension
+mv backup.sh backup
+mv create_folders.sh create_folders
+```
+
+## 🔒 Making Scripts Executable
+
+### Method 1: GUI Interface
+1. Navigate to bin folder in file manager
+2. Right-click on script file
+3. Properties → Permissions → Make executable
+
+### Method 2: chmod Command
+```bash
+chmod +x filename
+```
+- `chmod` = Change mode
+- `+x` = Add execute permission
+- Makes script executable from command line
+
+---
+
+# 🌐 Adding Scripts to PATH
+
+## 📝 Editing .bashrc
+```bash
+nano ~/.bashrc
+```
+
+## 🛤️ Adding Custom Path
+```bash
+# Add to bottom of .bashrc file
+PATH="$PATH:$HOME/bin"
+```
+
+## 🔄 Applying Changes
+```bash
+# Close and reopen terminal
+# OR reload .bashrc
+source ~/.bashrc
+```
+
+## ✅ Testing Global Access
+```bash
+# Now can run script from anywhere
+backup
+create_folders
+```
+
+---
+
+# 🆚 Bash Scripts vs Aliases
+
+## 📋 Comparison
+
+| Feature | Aliases | Bash Scripts |
+|---------|---------|--------------|
+| **Complexity** | Single commands only | Multiple commands & logic |
+| **Creation** | Quick one-liners | Requires file creation |
+| **Flexibility** | Limited | Very flexible |
+| **Use Case** | Simple shortcuts | Complex automation |
+
+## 💡 Key Differences
+- **Aliases**: Best for simple command shortcuts
+- **Bash Scripts**: Better for complex, multi-step operations
+- **Scripts**: Can include variables, loops, and conditional logic
+- **Scripts**: Easier to create and modify for complex tasks
+
+---
+
+✅ Summary:
+- Learned bash scripting basics with `.sh` extension
+- Created practical scripts for folder creation and backups
+- Mastered making scripts executable with `chmod +x`
+- Set up personal `~/bin` directory for custom commands
+- Modified `PATH` variable in `.bashrc` for global script access
+- Understood differences between bash scripts and aliases
+- Successfully created custom Linux commands using bash scripts
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
