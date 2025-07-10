@@ -744,4 +744,143 @@ create_folders
 - Modified `PATH` variable in `.bashrc` for global script access
 - Understood differences between bash scripts and aliases
 - Successfully created custom Linux commands using bash scripts
+
+## ✅ Day 12 – July 10, 2025
+### ✅ Day 12 – July 10, 2025
+---
+# ⏰ CronTab - Task Automation & Scheduling
+## 📄 What is CronTab?
+- CronTab is a time-based job scheduler in Unix-like systems
+- "Cron" comes from Greek word "chronos" meaning time
+- Used to automate repetitive tasks at specific times/intervals
+- Accessed using `crontab -e` command to edit cron jobs
+
+## 🏗️ CronTab Structure
+### 📊 The 6 Columns
+```
+* * * * * command
+| | | | |
+| | | | +-- Day of week (0-7) [0 & 7 = Sunday]
+| | | +---- Month (1-12) or JAN-DEC
+| | +------ Day of month (1-31)
+| +-------- Hour (0-23)
++---------- Minute (0-59)
+```
+- Columns separated by spaces (single or multiple)
+- Wildcard `*` means "any value"
+- Only `*` wildcard works in crontab (other wildcards don't work)
+
+---
+# 🔧 CronTab Commands & Usage
+## 📝 Basic Commands
+```bash
+# Edit crontab
+crontab -e
+
+# List current cron jobs
+crontab -l
+
+# Remove all cron jobs
+crontab -r
+```
+
+## 🧪 Example Jobs Created
+### 📁 Basic Example
+```bash
+# Append "hello" to file every minute
+* * * * * echo hello >> ~/Desktop/hello.txt
+```
+
+### ⏱️ Advanced Scheduling
+```bash
+# Every 15 minutes
+*/15 * * * * command
+
+# Every 10 minutes  
+*/10 * * * * command
+
+# Every hour at minute 30
+30 * * * * command
+```
+
+---
+# 📅 Time Specification Details
+## 🔢 Value Ranges
+- **Minutes**: 0-59
+- **Hours**: 0-23 (24-hour format)
+- **Day of Month**: 1-31
+- **Month**: 1-12 OR JAN-DEC (uppercase)
+- **Day of Week**: 0-7 OR SUN-SAT (0 & 7 = Sunday, 6 = Saturday)
+
+## 🎯 Special Operators
+| Operator | Description | Example |
+|----------|-------------|---------|
+| `*` | Any value | `* * * * *` (every minute) |
+| `*/n` | Every n units | `*/15` (every 15 minutes) |
+| `n-m` | Range | `1-5` (Monday to Friday) |
+| `n,m,o` | List | `1,3,5` (specific values) |
+
+---
+# 🛠️ CronTab Configuration
+## 🖥️ Changing Default Editor
+### Method 1: Home Directory
+```bash
+# Navigate to home directory
+cd ~
+ls -a
+
+# Edit .selected_editor file
+nano .selected_editor
+```
+
+### Method 2: Select Editor Command
+```bash
+# Use select-editor command
+select-editor
+```
+
+## 🌐 Useful Resources
+- **CronTab.guru**: Online cron expression generator and validator
+- Perfect for testing and visualizing when cron jobs will run
+- Helps understand complex cron patterns
+
+---
+# 💡 Practical Examples
+## 📋 Common Use Cases
+```bash
+# Daily backup at 2:30 AM
+30 2 * * * /home/user/backup.sh
+
+# Weekly cleanup every Sunday at midnight
+0 0 * * 0 /home/user/cleanup.sh
+
+# Workday reminder at 9 AM (Mon-Fri)
+0 9 * * 1-5 echo "Work starts!" >> ~/reminders.txt
+
+# Monthly report on 1st of each month
+0 8 1 * * /home/user/generate_report.sh
+```
+
+---
+# 📝 Important Notes
+## ⚠️ Medical Break Notice
+**July 7-8, 2025**: Unable to study due to malaria infection and 3-day hospital admission. Resumed learning on July 10th.
+
+## 🔑 Best Practices
+- Always use full paths in cron commands
+- Test scripts manually before adding to crontab
+- Cron runs with minimal environment variables
+- Consider output redirection for logging
+- Use `crontab.guru` for complex expressions
+
+---
+✅ **Summary:**
+- Learned CronTab basics and time-based job scheduling
+- Mastered 6-column cron syntax structure
+- Created automated tasks with various time intervals
+- Practiced using `*/15` syntax for interval scheduling
+- Explored month names (JAN-DEC) and day names (SUN-SAT)
+- Discovered crontab.guru for testing cron expressions
+- Successfully configured custom editor for crontab editing
+- Understood difference between cron wildcards and regular wildcards
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
