@@ -883,4 +883,160 @@ select-editor
 - Discovered crontab.guru for testing cron expressions
 - Successfully configured custom editor for crontab editing
 - Understood difference between cron wildcards and regular wildcards
+
+## ✅ Day 13 – July 11, 2025
+### ✅ Day 13 – July 11, 2025
+---
+# 🐧 GNU Project & Free Software Foundation
+## 📄 What is GNU?
+- **GNU** = "GNU's Not Unix" (recursive acronym)
+- Started by **Richard Stallman** in 1983
+- Main purpose: Make all software free and open source
+- Provides essential tools and utilities for Unix-like systems
+
+## 🔓 The Four Freedoms of Free Software
+1. **Freedom 0**: Run the program for any purpose
+2. **Freedom 1**: Study and modify the source code  
+3. **Freedom 2**: Redistribute copies to help others
+4. **Freedom 3**: Distribute your modified versions
+
+These four pillars form the foundation of free software philosophy.
+
+---
+# 🖥️ GNU/Linux History
+## 👨‍💻 Key Figures
+- **Richard Stallman**: Founded GNU Project (1983)
+- **Linus Torvalds**: Created Linux kernel (1991)
+- **GNU/Linux**: Combination completed around 1992-1993
+
+## 🧩 The Missing Piece
+- GNU Project provided most system utilities
+- Linus Torvalds created the missing kernel
+- Together they formed complete GNU/Linux operating system
+
+---
+# 🛠️ GNU Core Utilities Exploration
+## 🌐 Source Discovery
+- Visited **gnu.org** website
+- Navigated to downloads section
+- Found **coreutils** package containing:
+  - `ls` command
+  - `date` command  
+  - `echo` command
+  - Many other essential utilities
+
+## 📦 Source Code Download
+```bash
+# Downloaded latest coreutils source
+# File format: coreutils-x.x.tar.xz
+# Extension: .xz (requires -J flag for extraction)
+```
+
+---
+# 🔧 Source Code Compilation Process
+## 📂 Extraction & Exploration
+```bash
+# Extract source code (capital J for .xz files)
+tar -xJf coreutils-x.x.tar.xz
+
+# Navigate into source directory
+cd coreutils-x.x
+
+# Find ls command source using grep
+grep -r "ls" src/
+```
+
+## ✏️ Source Code Modification
+- Located `ls.c` file in source directory
+- Edited using `nano` editor
+- Found `main()` function
+- Added custom line: "hello master" message
+- All GNU utilities written in **C language**
+
+---
+# ⚙️ Build Environment Setup
+## 🔨 Installing Required Tools
+```bash
+# Install GNU C Compiler
+sudo apt-get install gcc
+
+# Install make command
+sudo apt-get install make
+```
+
+## 🏗️ Configuration Process
+```bash
+# Configure build for system architecture
+./configure
+```
+- Detects hardware architecture (32-bit/64-bit)
+- Creates various build files:
+  - `Makefile.in`
+  - `Makefile` (no extension)
+  - `Makefile.am`
+
+---
+# 🚀 Compilation & Installation
+## 📝 Build Process
+```bash
+# Compile modified source code
+make
+```
+- Compiles only changed/updated C files
+- Converts C code to machine code
+- Incremental compilation (only rebuilds what changed)
+
+## 💾 System Installation
+```bash
+# Install compiled software system-wide
+sudo make install
+```
+- Installs new binaries to system directories
+- Makes custom modifications available globally
+
+---
+# 🔄 Build System Understanding
+## 📊 Compilation Workflow
+| Step | Command | Purpose |
+|------|---------|---------|
+| **Configure** | `./configure` | System detection & Makefile generation |
+| **Compile** | `make` | Convert C source to machine code |
+| **Install** | `sudo make install` | Deploy binaries system-wide |
+
+## 🧠 Key Concepts
+- **GCC**: GNU Compiler Collection (compiles C code)
+- **Make**: Build automation tool
+- **Machine Code**: Binary code computers understand
+- **Incremental Build**: Only recompiles changed files
+
+---
+# 🎯 Archive Formats
+## 📁 Compression Types
+- **`.tar.xz`**: Use `tar -xJf` (capital J)
+- **`.tar.bz2`**: Use `tar -xjf` (lowercase j)
+- **`.tar.gz`**: Use `tar -xzf` (lowercase z)
+
+---
+# 💡 Restoration Process
+## 🔙 Reverting Changes
+```bash
+# Edit ls.c back to original state
+nano src/ls.c
+
+# Recompile and reinstall
+make
+sudo make install
+```
+
+---
+✅ **Summary:**
+- Learned about GNU Project and Richard Stallman's free software philosophy
+- Understood the four freedoms of free software
+- Explored GNU/Linux history and Linus Torvalds' contribution
+- Successfully downloaded and extracted GNU coreutils source code
+- Modified ls.c source code to add custom functionality
+- Mastered complete source compilation workflow (configure → make → install)
+- Installed essential build tools (GCC compiler and make)
+- Understood difference between various archive formats (.xz, .bz2, .gz)
+- Successfully compiled and installed custom system utilities from source
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
