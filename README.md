@@ -1039,4 +1039,128 @@ sudo make install
 - Installed essential build tools (GCC compiler and make)
 - Understood difference between various archive formats (.xz, .bz2, .gz)
 - Successfully compiled and installed custom system utilities from source
+
+## ✅ Day 14 – July 23, 2025
+### ✅ Day 14 – July 23, 2025
+
+> **📋 Medical Note:** *After a 12-day break due to hospitalization for fever, malaria, liver issues, and suspected TB, I'm back to continuing my Linux learning journey. Health recovery took priority, but excited to resume learning!*
+
+---
+# 📚 Software Repositories Overview
+## 🏛️ What are Software Repositories?
+- **Software repositories** = Digital libraries for software packages
+- Just like libraries have books, repositories have categorized software
+- Central storage locations where software packages are maintained and distributed
+
+## 🔍 System Information Discovery
+### Finding Your Ubuntu Version
+```bash
+# Check Ubuntu version and system details
+lsb_release -a
+
+# Check hardware architecture
+uname -m
+```
+**My System:**
+- **Ubuntu Version**: Noble 24.04 LTS
+- **Architecture**: AMD64
+
+---
+# 🗂️ Ubuntu Repository Types
+## 📦 Four Main Software Repositories
+| Repository | Management | Description |
+|------------|------------|-------------|
+| **Main** | Canonical Team | Official Ubuntu-supported packages |
+| **Universe** | Community | Open source, community-maintained packages |
+| **Restricted** | Canonical | Proprietary drivers for hardware compatibility |
+| **Multiverse** | Community | Software with licensing restrictions |
+
+## 🌐 Repository Exploration
+- **Website**: `packages.ubuntu.com`
+- **Package Categories**: Video, Audio, Music, Text, Development, etc.
+- **Architecture Support**: Packages available for different hardware architectures
+
+---
+# 🔗 Package Dependencies System
+## 🧩 Four Types of Dependencies
+1. **Depends**: Required packages (must have)
+2. **Recommends**: Strongly suggested packages
+3. **Suggests**: Optional but useful packages  
+4. **Enhances**: Packages that improve functionality
+
+## ⚙️ The Complexity Problem
+- Each software has multiple versions for different architectures
+- Manual dependency resolution is extremely tedious
+- Managing compatibility between packages is complex
+
+---
+# 🛠️ APT Package Manager
+## 📋 What is APT?
+- **APT** = Advanced Package Tool
+- Ubuntu's built-in package manager
+- **Automatic handling of**:
+  - Hardware architecture detection
+  - Dependency resolution
+  - Version compatibility
+  - Installation/removal processes
+
+## 🔍 APT Search Commands
+### Finding Software Packages
+```bash
+# Search for software related to Microsoft Word (docx files)
+apt-cache search docx
+
+# Narrow down to text-related software only
+apt-cache search docx | grep text
+```
+
+### Getting Detailed Package Information
+```bash
+# Show comprehensive package details
+apt-cache show [package-name]
+```
+
+**Information Provided:**
+- Software version
+- Creator/maintainer details
+- Contact information
+- Detailed description
+- Dependencies list
+- Package size and installation requirements
+
+---
+# 💾 Offline Package Discovery
+## 🗃️ Local APT Cache
+- APT maintains local cache from Ubuntu ISO file
+- **Offline capability**: Search packages without internet connection
+- Cache contains essential package metadata
+- Enables package discovery even in offline environments
+
+---
+# 🎯 Key Learning Points
+## 🧠 Core Concepts Mastered
+- **Repository Structure**: Understanding Ubuntu's four-tier software organization
+- **Package Dependencies**: Learning about the complex web of software requirements
+- **APT Package Manager**: Mastering Ubuntu's primary software management tool
+- **System Information**: Commands to identify system specifications
+- **Offline Capabilities**: Understanding local cache functionality
+
+## 📊 Command Reference
+| Command | Purpose |
+|---------|---------|
+| `lsb_release -a` | Display Ubuntu version information |
+| `uname -m` | Show hardware architecture |
+| `apt-cache search [term]` | Search for packages |
+| `apt-cache show [package]` | Display detailed package information |
+| `command | grep [filter]` | Filter command output |
+
+---
+✅ **Summary:**
+- Returned to Linux learning after medical recovery
+- Explored Ubuntu's software repository ecosystem and structure
+- Learned about package dependencies and their complexity
+- Mastered APT package manager basics for software discovery
+- Understood offline package search capabilities through local cache
+- Gained practical experience with system information commands
+- Prepared foundation for advanced package management operations
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
