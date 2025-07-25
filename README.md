@@ -1333,4 +1333,209 @@ ls -la
 - Gained understanding of package development and distribution process
 - Explored practical applications like xeyes and xman
 - Built foundation for future source code compilation and modification
+
+## ✅ Day 16 – July 25, 2025
+### ✅ Day 16 – July 25, 2025
+
+---
+# 🗑️ APT Package Removal Methods
+## 🔧 Three Types of Package Removal
+### Standard Removal
+```bash
+# Remove package but keep configuration files
+sudo apt-get remove <package>
+```
+**What it does:**
+- Uninstalls the software binary
+- **Preserves** configuration files in `/etc/` and `~/.config/`
+- **Use case**: When you might reinstall later and want to keep custom settings
+
+### Complete Removal (Purge)
+```bash
+# Remove package AND all configuration files
+sudo apt-get purge <package>
+```
+**What it does:**
+- Uninstalls the software binary
+- **Deletes** all associated configuration files
+- **Use case**: Clean uninstall when you don't plan to reinstall
+
+### Dependency Cleanup
+```bash
+# Remove orphaned dependencies
+sudo apt-get autoremove
+```
+**What it does:**
+- Removes packages that were auto-installed as dependencies
+- Only removes packages no longer needed by any installed software
+- **Use case**: Free up disk space by cleaning unused dependencies
+
+---
+# 💾 APT Cache Management
+## 📂 Package Cache Location
+```bash
+# View cached .deb package files
+ls /var/cache/apt/archives/
+```
+- **Location**: `/var/cache/apt/archives/`
+- **Contents**: Downloaded `.deb` package files
+- **Purpose**: Faster reinstallation and offline access
+
+## 🧹 Cache Cleaning Commands
+### Complete Cache Cleanup
+```bash
+# Remove ALL cached .deb files
+sudo apt-get clean
+```
+**What it does:**
+- Deletes all `.deb` files from cache directory
+- Frees maximum disk space
+- **Use case**: When disk space is critically low
+
+### Smart Cache Cleanup
+```bash
+# Remove only outdated cached files
+sudo apt-get autoclean
+```
+**What it does:**
+- Only deletes `.deb` files that can no longer be downloaded
+- Keeps currently available package files
+- **Use case**: Regular maintenance without losing useful cache
+
+---
+# 🔧 Source Repository Configuration
+## 📝 Modern Ubuntu Source Configuration
+### Ubuntu 22.04+ Source File Location
+```bash
+# Edit modern Ubuntu source configuration
+sudo nano /etc/apt/sources.list.d/ubuntu.sources
+```
+
+## ⚙️ Enabling Source Repositories
+### Configuration Modification
+**Before (Binary packages only):**
+```
+Types: deb
+URIs: http://archive.ubuntu.com/ubuntu/
+Suites: jammy jammy-updates jammy-backports
+Components: main restricted universe multiverse
+```
+
+**After (Binary + Source packages):**
+```
+Types: deb deb-src
+URIs: http://archive.ubuntu.com/ubuntu/
+Suites: jammy jammy-updates jammy-backports
+Components: main restricted universe multiverse
+```
+
+### Key Changes Required
+- **Find**: `Types: deb`
+- **Change to**: `Types: deb deb-src`
+- **Apply to**: Each repository block in the file
+
+## 🔄 Activating Source Repositories
+```bash
+# Update APT cache with new source repositories
+sudo apt update
+```
+
+---
+# 📥 Source Code Download Process
+## 🛠️ Prerequisites Check
+```bash
+# Install development tools (if not already installed)
+sudo apt-get install dpkg-dev
+
+# Verify source repositories are enabled
+apt-cache policy
+```
+
+## 📦 Source Code Retrieval
+```bash
+# Download source code for any package
+sudo apt-get source <package>
+```
+**What you get:**
+- Complete source code directory
+- Build configuration files
+- Debian packaging information
+- Development documentation
+
+---
+# 🗂️ Configuration File Locations
+## 📍 Where Configuration Files Live
+| Location | Purpose | Examples |
+|----------|---------|----------|
+| **`/etc/`** | System-wide configurations | `/etc/apache2/`, `/etc/ssh/` |
+| **`~/.config/`** | User-specific configurations | `~/.config/Code/`, `~/.config/git/` |
+| **`~/.[app]`** | Legacy user configs | `~/.bashrc`, `~/.vimrc` |
+
+## 🔄 Ubuntu Version Differences
+### Legacy Method (Ubuntu 20.04 and older)
+```bash
+# Old configuration file location
+sudo nano /etc/apt/sources.list
+# Uncomment lines starting with # deb-src
+```
+
+### Modern Method (Ubuntu 22.04+)
+```bash
+# New configuration file location
+sudo nano /etc/apt/sources.list.d/ubuntu.sources
+# Change "Types: deb" to "Types: deb deb-src"
+```
+
+---
+# 🎯 Complete Package Management Workflow
+## 📋 Best Practices Summary
+### Installation & Exploration
+```bash
+sudo apt update                    # Update package lists
+sudo apt-get install <package>    # Install package
+apt-cache show <package>          # Get package info
+```
+
+### Source Code Access
+```bash
+# Enable source repos (Ubuntu 22.04+)
+sudo nano /etc/apt/sources.list.d/ubuntu.sources
+# Change Types: deb to Types: deb deb-src
+sudo apt update                    # Refresh with source repos
+sudo apt-get source <package>     # Download source code
+```
+
+### Maintenance & Cleanup
+```bash
+sudo apt-get autoremove           # Remove unused dependencies
+sudo apt-get autoclean            # Clean outdated cache
+sudo apt-get remove <package>     # Remove keeping configs
+sudo apt-get purge <package>      # Complete removal
+```
+
+---
+# 💡 Key Learning Insights
+## 🧠 Advanced Concepts Mastered
+- **Granular Removal Control**: Understanding difference between remove vs purge
+- **Dependency Management**: Automatic cleanup of orphaned packages  
+- **Cache Optimization**: Smart disk space management techniques
+- **Modern Configuration**: Ubuntu's evolution in repository management
+- **Source Access**: Complete workflow for accessing package source code
+
+## 🎯 Practical Skills Developed
+- Advanced package removal strategies
+- Disk space optimization through cache management
+- Modern Ubuntu source repository configuration
+- Complete source code download and access workflow
+- System maintenance best practices
+
+---
+✅ **Summary:**
+- Mastered three different package removal methods with their specific use cases
+- Learned comprehensive APT cache management for disk space optimization
+- Discovered modern Ubuntu source repository configuration in ubuntu.sources file
+- Successfully enabled source code access for all Ubuntu repository packages  
+- Built complete workflow for package installation, source access, and system maintenance
+- Understood configuration file preservation strategies and locations
+- Gained expertise in Ubuntu version-specific configuration differences
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
