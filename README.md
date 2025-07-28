@@ -1538,4 +1538,215 @@ sudo apt-get purge <package>      # Complete removal
 - Built complete workflow for package installation, source access, and system maintenance
 - Understood configuration file preservation strategies and locations
 - Gained expertise in Ubuntu version-specific configuration differences
+
+## ✅ Day 17 – July 25, 2025
+### ✅ Day 17 – July 25, 2025
+
+> **📅 Schedule Note:** *Took a well-deserved break over the weekend (July 26-27, 2025). Consistent learning with planned rest periods helps maintain long-term progress!*
+
+---
+# 🐧 Strategic Linux Development Setup
+## 🎯 Platform Decision
+**Decision Made**: Practice Git on Ubuntu VM instead of Windows
+**Strategic Reasoning**:
+- Most cloud and system administration work happens on Linux
+- Real-world DevOps environments are primarily Linux-based
+- Better preparation for professional development workflows
+
+---
+# 🛠️ Git Installation & Configuration
+## 📦 Git Installation on Ubuntu
+```bash
+# Install Git on Ubuntu
+sudo apt update
+sudo apt install git
+
+# Verify installation
+git --version
+```
+
+## ⚙️ Essential Git Configuration
+```bash
+# Configure username (required for commit tracking)
+git config --global user.name "Your Name"
+
+# Configure email (required for commit tracking)
+git config --global user.email "your.email@example.com"
+
+# Verify configuration
+git config --list
+```
+
+**Why Configuration Matters**:
+- **Commit Tracking**: Every Git commit requires author identification
+- **Collaboration**: Team members can see who made which changes
+- **Professional Practice**: Industry standard for version control
+
+---
+# 📁 Development Workspace Setup
+## 🗂️ Project Directory Structure
+```bash
+# Create dedicated Git practice directory
+mkdir git-practice
+cd git-practice
+
+# Initialize as Git repository (when ready)
+git init
+```
+
+**Best Practice**: Dedicated directories for different learning topics keeps projects organized
+
+---
+# 💻 JavaScript Development Environment
+## 📝 File Creation & Management
+### Linux Terminal File Operations
+```bash
+# Create new file using touch
+touch index.js
+
+# Edit file using nano
+nano index.js
+```
+
+### Sample JavaScript Code Created
+```javascript
+// index.js - Basic function example
+function addNumbers(a, b) {
+    return a + b;
+}
+
+console.log("Result:", addNumbers(5, 3));
+```
+
+## 🚀 Node.js Installation & Execution
+### Installing Node.js on Ubuntu
+```bash
+# Install Node.js
+sudo apt update
+sudo apt install nodejs npm
+
+# Verify installation
+node --version
+npm --version
+```
+
+### Running JavaScript Code
+```bash
+# Execute JavaScript file
+node index.js
+```
+
+**Expected Output**:
+```
+Result: 8
+```
+
+---
+# 🔧 Code Editor Setup
+## 📝 Editor Selection Decision
+**Chosen**: Visual Studio Code
+**Reasoning**: 
+- Atom has been discontinued (sunset in December 2022)
+- VS Code is industry standard for modern development
+- Excellent Git integration and Linux support
+- Extensive extension ecosystem
+
+## 💾 VS Code Installation on Ubuntu
+### Installation Methods
+```bash
+# Method 1: Using Snap (Recommended)
+sudo snap install code --classic
+
+# Method 2: Using APT (Alternative)
+# Download and install .deb package from official website
+```
+
+### Launch VS Code
+```bash
+# Launch from terminal
+code
+
+# Open specific directory
+code git-practice/
+
+# Open specific file
+code index.js
+```
+
+---
+# 🏗️ Complete Development Stack
+## 🧰 Tools Now Available
+| Tool | Purpose | Version Control |
+|------|---------|----------------|
+| **Git** | Version control system | ✅ Core functionality |
+| **Node.js** | JavaScript runtime | ✅ For project development |
+| **VS Code** | Code editor | ✅ Built-in Git integration |
+| **Ubuntu Terminal** | Command line interface | ✅ Git CLI operations |
+
+## 🌐 Real-World Environment Simulation
+**Now Equipped For**:
+- Professional Git workflows
+- JavaScript/Node.js development  
+- Linux system administration
+- Cloud and DevOps practices
+- Terminal-based development operations
+
+---
+# 📚 Learning Resource Integration
+## 🎥 Tutorial Following Strategy
+**Approach**: YouTube Git tutorial with hands-on practice
+**Setup Match**: Created JavaScript project to follow along exactly
+**Benefit**: Practical learning with real code examples
+
+## 🔄 Workflow Integration
+```bash
+# Typical development session workflow
+cd git-practice/          # Navigate to project
+code .                    # Open VS Code
+# Write/edit code in VS Code
+node index.js            # Test JavaScript code
+git add .                # Stage changes (when ready)
+git commit -m "message"  # Commit changes (when ready)
+```
+
+---
+# 🎯 Professional Development Alignment
+## 💼 Industry-Standard Setup Achieved
+**Linux Environment**: ✅ Ubuntu VM for system administration practice
+**Version Control**: ✅ Git with proper configuration
+**Modern Editor**: ✅ VS Code with full feature set
+**Runtime Environment**: ✅ Node.js for JavaScript execution
+**Terminal Proficiency**: ✅ File management with `nano`, `touch`, etc.
+
+## 🚀 Career Preparation Benefits
+- **Cloud Computing**: Linux skills essential for AWS, Azure, GCP
+- **DevOps Roles**: Git workflows and terminal proficiency required
+- **Full-Stack Development**: Node.js and modern editor setup
+- **System Administration**: Ubuntu experience and command-line tools
+- **Collaboration**: Professional Git practices from day one
+
+---
+# 💡 Key Learning Insights
+## 🧠 Technical Skills Developed
+- Git installation and configuration on Linux
+- Terminal-based file management (`nano`, `touch`)
+- Node.js installation and JavaScript execution
+- VS Code setup and integration with development workflow
+- Cross-platform development environment optimization
+
+## 🎯 Strategic Learning Decisions
+- Choosing Linux over Windows for professional relevance
+- Selecting VS Code over discontinued Atom editor  
+- Creating structured practice environment for focused learning
+- Following video tutorials with hands-on implementation
+
+---
+✅ **Summary:**
+- Successfully transitioned to Linux-based development environment
+- Installed and configured Git with proper user identification
+- Set up complete JavaScript development stack with Node.js
+- Established modern code editor (VS Code) for professional development
+- Created organized project structure for systematic Git learning
+- Built foundation for real-world DevOps and cloud computing workflows
+- Aligned learning environment with industry standards and career goals
     ``` This repository will be updated daily as I continue progressing toward cloud/system admin roles. 🌱💻
